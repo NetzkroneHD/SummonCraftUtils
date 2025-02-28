@@ -1,0 +1,79 @@
+name: HitBox
+version: '${project.version}'
+main: de.netzkronehd.hitboxutils.paper.HitBoxUtils
+api-version: 1.13
+author: NetzkroneHD
+
+depend:
+  - LuckPerms
+  - PlaceholderAPI
+
+softdepend:
+  - WorldGuard
+
+commands:
+  punish:
+    description: Opens a GUI to punish the player
+    aliases: [ gestionar, pn ]
+  orders:
+    description: Opens a GUI with pending punishments
+    aliases: [ pedidos, pedi2, orders ]
+  sanctions:
+    description: Opens a GUI with the last punish you received
+    aliases: [ sanciones ]
+  hitboxsendpaper:
+    aliases:
+      - sendpaper
+      - sendp
+  hitboxipinfopaper:
+    aliases:
+      - ipinfopaper
+      - ipinfop
+      - ipinfo
+  hitboxgamemode:
+    aliases:
+      - gamemode
+      - gm
+  hitboxrename:
+    aliases:
+      - rename
+  hitboxscreenshare:
+    aliases:
+      - screenshare
+      - ss
+  hitboxstaff:
+    aliases:
+      - hbstaff
+      - staff
+  hitboxteleport:
+    aliases:
+      - teleport
+      - tp
+  hitboxenchant:
+    aliases:
+      - enchant
+  hitboxclearitems:
+    aliases:
+      - clearitem
+  hitboxadminpaper:
+    aliases:
+      - adminpaper
+      - adminp
+      - hitboxpaper
+      - hitboxp
+  hitboxchatlogs:
+    aliases:
+      - chatlog
+      - chatlogs
+  hitboxrepair:
+    aliases:
+      - repair
+  hitboxserverrestart:
+    aliases:
+      - serverrestart
+  hitboxclickblock:
+    aliases:
+      - clickblock
+  hitboxservermute:
+    aliases:
+      - servermute

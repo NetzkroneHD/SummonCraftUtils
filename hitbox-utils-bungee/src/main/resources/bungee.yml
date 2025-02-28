@@ -1,0 +1,12 @@
+name: HitBox-Utils-Bungee
+version: '${project.version}'
+main: de.netzkronehd.hitboxutils.bungee.HitBoxUtils
+author: NetzkroneHD
+
+depends:
+  - LuckPerms
+
+softDepends:
+  - LiteBans
+  - AdvancedBan
+  - NuVotifier

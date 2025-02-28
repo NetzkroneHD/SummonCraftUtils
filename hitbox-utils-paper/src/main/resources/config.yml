@@ -1,0 +1,18 @@
+notifications: true
+bedrock: false
+Database:
+  use: false
+  ip: "127.0.0.1"
+  port: "3306"
+  user: "root"
+  password: ""
+  database: "punishmentscore"
+  poolSize: 10
+  useSSL: false
+LitebansDatabase:
+  ip: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: ""
+  database: "litebans"
+  tablePrefix: "litebans_"

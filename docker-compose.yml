@@ -1,0 +1,62 @@
+services:
+
+  database:
+    image: mysql
+    restart: no
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker-compose/mysql:/var/lib/mysql
+      - ./docker-compose/init:/docker-entrypoint-initdb.d
+    networks:
+      - minecraft
+
+  cache:
+    image: redis
+    restart: no
+    command: redis-server --save 20 1 --loglevel warning --requirepass password
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./docker-compose/redis:/data
+    networks:
+      - minecraft
+
+  paper:
+    image: itzg/minecraft-server
+    restart: no
+    environment:
+      EULA: "TRUE"
+      ONLINE_MODE: "FALSE"
+      TYPE: "PAPER"
+      VERSION: "1.20.2"
+    depends_on:
+      - database
+      - cache
+    volumes:
+      - ./docker-compose/paper:/data
+    networks:
+      - minecraft
+
+  proxy:
+    image: itzg/mc-proxy
+    restart: no
+    environment:
+      BUNGEE_JAR_REVISION: "1"
+      CFG_MOTD: Powered by Docker
+      REPLACE_ENV_VARIABLES: "true"
+    depends_on:
+      - database
+      - cache
+    ports:
+      - "25578:25577"
+    volumes:
+      - ./docker-compose/proxy/config.yml:/config/config.yml
+      - ./docker-compose/proxy/server:/server
+    networks:
+      - minecraft
+
+networks:
+  minecraft:

@@ -1,0 +1,18 @@
+Messages:
+  no_permission: "&8[&6SummonCraft&8]&7 » Comando desconocido o no tienes permiso para ejecutarlo"
+  no_punishments: "&8[&6SummonCraft&8]&7 » Este jugador no tiene sanciones"
+  usage: "&8[&6SummonCraft&8]&7 » Usa: /punish <jugador>"
+  reload: "&8[&6SummonCraft&8]&7 » ¡Plugin recargado!"
+  error: "&8[&6SummonCraft&8]&7 » Hubo un error al ejecutar esta acción"
+  same_player: "&8[&6SummonCraft&8]&7 » No puedes sancionarte a ti mismo"
+  no_permission_staff: "&8[&6SummonCraft&8]&7 » Un staff superior deberá realizar esta acción"
+  use_force: "&8[&6SummonCraft&8]&7 » Hay un staff sancionando a ese usuario, si estás seguro de continuar usa /punish <jugador> force"
+  creating_order: "&8[&6SummonCraft&8]&7 » Esta acción deberá ejecutarla un moderador. Se ha creado un pedido con ID: &e&l%order%"
+  no_orders: "&8[&6SummonCraft&8]&7 » No hay ninguna sanción pendiente"
+  order_deleted: "&8[&6SummonCraft&8]&7 » ¡Orden borrada!"
+  database_disabled: "&8[&6SummonCraft&8]&7 » No existe una Database"
+  offline_player: "&8[&6SummonCraft&8]&7 » El jugador al que intentas sancionar está offline"
+  notifications:
+    title: "&c&lNUEVA SANCION"
+    subtitle: "&6Usa el comando &c/sanciones"
+    text: "&cHas recibido una sanción mientras estabas desconectado, usa &e/sanciones &cpara ver los detalles"

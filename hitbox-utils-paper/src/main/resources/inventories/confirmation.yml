@@ -1,0 +1,12 @@
+size: 27
+name: "¿Estas Segur@?"
+accept:
+  slot: 12
+deny:
+  slot: 14
+  item:
+    displayName: "&c¡Cancelar Sanción!"
+    material: WHITE_WOOL
+    damage: 14
+    lore:
+      - "&6* Click para cancelar"
